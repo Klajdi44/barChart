@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.bars {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1em;
+
+}
+
+.bar {
+  background: red;
+  height: 32%;
+  width: 150px;
+  border: 2px solid #000;
+  margin: 0 1px;
+}
