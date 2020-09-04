@@ -1,14 +1,14 @@
 'use strict';
 
-
 const allBars = document.querySelectorAll('.bar');
 
 const arr = [20, 23, 29, 21, 13, 2, 20, 23, 5, 31, 5, 5, 29, 4, 1, 4, 16, 19, 2, 9, 10, 23, 18, 32, 15, 10, 32, 11, 25, 31, 26, 24, 3, 4, 20, 28, 22, 26, 22, 12];
 
 
 const getFakeCustomers = () => {
-  const random = Math.floor(Math.random() * 32);
-  arr.push(random);
+  return Math.floor(Math.random() * 32);
+
+  // arr.push(random);
 }
 
 const visualizeData = () => {
@@ -22,7 +22,7 @@ visualizeData();
 
 //get first element from arr and push it to the end.
 const modifyArr = () => {
-  const random = Math.floor(Math.random() * 32);
+  const random = getFakeCustomers();
   let elementShifted = arr.shift();
   arr.push(random); //elementShifted
 }
